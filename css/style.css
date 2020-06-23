@@ -9,8 +9,21 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1170px;
   margin: auto;
+  padding: 0 15px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: red;
+  margin-top: 3px;
 }
 
 .line {
@@ -129,6 +142,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-content .info a {
@@ -343,6 +358,7 @@ body {
   display: flex;
   margin: 0 auto;
   height: 295px;
+  width: 382px;
 }
 
 .rental-block .card-item__title {
@@ -421,6 +437,8 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .relation-text {
@@ -500,7 +518,13 @@ body {
 }
 
 .delivery-block {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .delivery-block img {
@@ -521,7 +545,6 @@ body {
   font-size: 24px;
   line-height: 120%;
   padding: 27px 59px 13px 46px;
-  position: absolute;
 }
 
 .delivery-block .delivery-card__title {
@@ -538,16 +561,123 @@ body {
 }
 
 .delivery-block .one {
-  top: 140px;
+  margin-top: 130px;
 }
 
 .delivery-block .two {
+  margin: 21px 0 0 auto;
+  position: relative;
   right: -90px;
-  top: 565px;
 }
 
 .delivery-block .three {
-  top: 889px;
-  left: 40px;
+  margin: 41px auto 0 40px;
+}
+
+@media (max-width: 1326px) {
+  .delivery-block img {
+    display: none;
+  }
+  .delivery-block .two {
+    right: 0px;
+  }
+  .delivery-block .one {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1148px) {
+  .header-menu .nav-link a {
+    font-size: 12px;
+  }
+  .about .container {
+    padding-top: 50px;
+  }
+  .about .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rental-block .card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .relation-text {
+    max-width: 600px;
+  }
+  .rental-description .title {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-logo .text {
+    display: none;
+  }
+  .about .container {
+    padding-top: 25px;
+  }
+  .rental .bg, .rental .fon {
+    display: none;
+  }
+  .rental-description .fon2, .rental-description .bg2 {
+    display: none;
+  }
+  .delivery .bg3, .delivery .fon3, .delivery .bg4 {
+    display: none;
+  }
+  .delivery .two, .delivery .tgree {
+    margin-top: 20px;
+  }
+  .relation-text {
+    max-width: 700px;
+    text-align: center;
+  }
+  .relation-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 700px;
+    margin-top: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .relation-info__bottom {
+    margin-top: 0;
+    width: 360px;
+  }
+  .relation-info .btn {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-content .title {
+    font-size: 26px;
+  }
+  .header-content .subtitle {
+    font-size: 20px;
+  }
+  .rental-description .title {
+    margin-top: 0;
+  }
+  .delivery .one, .delivery .two, .delivery .three {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
