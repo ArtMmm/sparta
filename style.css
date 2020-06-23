@@ -656,6 +656,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .line {
+    height: 100px;
+  }
   .hamburger {
     display: block;
     position: fixed;
@@ -678,12 +681,6 @@ body {
     width: 90%;
     margin: auto;
     margin-top: 20px;
-  }
-}
-
-@media (max-width: 479px) {
-  .line {
-    height: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
