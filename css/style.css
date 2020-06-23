@@ -27,7 +27,7 @@ body {
 }
 
 .line {
-  height: 80px;
+  height: 90px;
   background: #353132;
 }
 
@@ -598,6 +598,10 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .about .row-container__img {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
   .rental-block .card {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -656,6 +660,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .line {
+    height: 100px;
+  }
   .hamburger {
     display: block;
     position: fixed;
@@ -678,6 +685,49 @@ body {
     width: 90%;
     margin: auto;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .about .bottom p {
+    font-size: 20px;
+  }
+  .rental-block .card-item {
+    width: 100%;
+  }
+  .rental-block .card-item img {
+    width: 100%;
+  }
+  .rental-block .card-item__title {
+    font-size: 20px;
+  }
+  .rental-block .card-item__descr {
+    font-size: 16px;
+  }
+  .rental-description .title {
+    font-size: 27px;
+  }
+  .rental-description .list__item {
+    font-size: 15px;
+  }
+  .relation-text {
+    font-size: 18px;
+  }
+  .relation-info {
+    font-size: 14px;
+  }
+  .relation-info__bottom {
+    width: 250px;
+  }
+  .relation-info .btn {
+    width: 250px;
+  }
+  .delivery .title {
+    margin-top: 0;
+    font-size: 23px;
+  }
+  .btn {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
