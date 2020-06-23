@@ -102,9 +102,7 @@ body {
           justify-content: space-between;
   list-style: none;
 }
-.header-menu .menu-link{
-  text-align: center;
-}
+
 .header-menu .menu-link a {
   font-style: normal;
   font-weight: normal;
@@ -837,7 +835,9 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  
+  .header-menu .menu-link {
+    text-align: center;
+  }
   .header-content .title {
     font-size: 26px;
   }
