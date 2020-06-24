@@ -216,6 +216,7 @@ body {
 
 .about .row-container {
   max-width: 220px;
+  min-height: 322px;
   margin-right: 5px;
 }
 
