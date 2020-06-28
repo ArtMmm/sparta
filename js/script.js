@@ -15,3 +15,14 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+const modalClose = document.querySelector('[data-close]'),
+      modal = document.querySelector('.modal'),
+      not = document.querySelector('.not');
+      
+      modalClose.addEventListener('click', () => {
+          not.classList.toggle('hide');
+      });
+      modalClose.addEventListener('click', () => {
+          modal.classList.toggle('mine');
+      });
+    
